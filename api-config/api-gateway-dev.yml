@@ -1,0 +1,52 @@
+server:
+  port: 8090
+  servlet:
+    # cookie 30 天过期
+    session:
+      cookie:
+        max-age: 2592000
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      default-filters:
+        - AddRequestHeader=source, yuwei
+      routes:
+        - id: api_interface
+          uri: lb://api-interface
+          predicates:
+            - Path=/api/interface/**
+        - id: api_third
+          uri: lb://api-third
+          predicates:
+            - Path=/api/third/**
+        - id: api_order
+          uri: lb://api-order
+          predicates:
+            - Path=/api/order/**
+        - id: api_backend
+          uri: lb://api-backend
+          predicates:
+            - Path=/api/**
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+dubbo:
+  application:
+    name: dubbo-api-gateway
+    qosEnableL: true
+    qosPort: 33333
+    qosAcceptForeignIp: false
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848

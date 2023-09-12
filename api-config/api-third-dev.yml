@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: api-third
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+server:
+  port: 7531
+  servlet:
+    context-path: /api/third
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+# 腾讯云短信
+sms:
+  client:
+    secretId: xxx
+    secretKey: xxx
+    region: xxx
+    sdkAppId: xxx
+    signName: xxx
+    templateId: xxx
+# 阿里云oss
+oss:
+  client:
+    accessKey: xxx
+    secretKey: xxx
+    region: xxx
+    bucket: xxx

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        file-extension: yml
+        shared-configs[0]:
+          dataId: redis.yml
+          refresh: true

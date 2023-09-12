@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: api-interface
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+server:
+  port: 8123
+  servlet:
+    context-path: /api/interface
+api:
+  client:
+    access-key: xxx
+    secret-key: xxx
