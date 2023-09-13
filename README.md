@@ -67,6 +67,41 @@
 
 ![image0.png](api-backend%2Fdoc%2Fimage0.png)
 
+## 自定义SDK
+
+提供给开发者在代码层面实现远程调用平台所提供api的能力
+
+### 环境准备
+
+JDK 1.8+
+
+SpringBoot 2.x
+
+### Maven引入
+
+```xml
+<dependency>
+  <groupId>io.github.Mr-JoKerY</groupId>
+  <artifactId>API-Client-SDK</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
+
+### 代码示例
+
+依赖成功引入后，需要在`application.yml`配置文件中进行相关配置
+
+```yml
+# 开发者签名认证
+api:
+  client:
+    # ak/sk可以在Yun API平台的个人中心查看
+    access-key: xxx
+    secret-key: xxx
+```
+
+配置完成后，就可以启动项目使用客户端 CommonApiClient 去调用接口
+
 ## 项目展示
 
 * 主页
