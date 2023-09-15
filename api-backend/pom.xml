@@ -20,11 +20,17 @@
             <artifactId>api-common</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.Mr-JoKerY/api-client-sdk -->
         <dependency>
-            <groupId>com.hyw</groupId>
+            <groupId>io.github.Mr-JoKerY</groupId>
             <artifactId>api-client-sdk</artifactId>
             <version>0.0.1</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.hyw</groupId>-->
+<!--            <artifactId>api-client-sdk</artifactId>-->
+<!--            <version>0.0.1</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>

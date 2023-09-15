@@ -81,9 +81,9 @@ SpringBoot 2.x
 
 ```xml
 <dependency>
-  <groupId>io.github.Mr-JoKerY</groupId>
-  <artifactId>API-Client-SDK</artifactId>
-  <version>0.0.1</version>
+    <groupId>io.github.Mr-JoKerY</groupId>
+    <artifactId>api-client-sdk</artifactId>
+    <version>0.0.1</version>
 </dependency>
 ```
 
