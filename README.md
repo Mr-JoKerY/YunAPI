@@ -6,7 +6,7 @@
 
 项目后端使用语言为Java，包括现在市面上主流技术栈，采用微服务架构开发，解耦业务模块，前端使用React，Ant Design Pro + Ant Design组件库，使用现成组件库快速开发项目。
 
-> 在线体验：[Yun API](http://111.230.61.108:888)
+> 在线体验：[Yun API](http://111.230.61.108:888) [备用地址](https://flea-first-uniquely.ngrok-free.app)
 
 ## 功能模块
 
